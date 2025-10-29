@@ -8,6 +8,24 @@ http://nicewebtype.com
 
 ============================================================================
 
+ATTRIBUTION & ACKNOWLEDGMENTS
+
+This repository preserves and enhances the original Web Font Specimen v2.0 
+created by Tim Brown from Nice Web Type. Tim Brown is Type Manager for 
+Typekit and a leading advocate for web typography who has contributed 
+immensely to the craft through tools, education, and community building.
+
+Original Web Font Specimen: http://webfontspecimen.com
+Tim Brown's Blog: http://nicewebtype.com
+Twitter: @nicewebtype
+
+Special thanks to the community members who helped preserve this work:
+• Eric Meyer - Created Compass/Sass port (mirisuzanne/webfontspecimen, 2009)
+• Robert Whitney - Created Sinatra app port (robertjwhitney/web-font-specimen, 2010)
+• Various other developers who created adaptations and kept this tool accessible
+
+============================================================================
+
 OVERVIEW
 
 Web Font Specimen is a comprehensive testing and showcase system for 
@@ -173,6 +191,26 @@ This tool is ideal for:
 
 ============================================================================
 
+RELATED PROJECTS & ADAPTATIONS:
+
+The Web Font Specimen has inspired numerous ports and adaptations over the years:
+
+FRAMEWORK INTEGRATIONS
+• mirisuzanne/webfontspecimen - Compass/Sass port by Eric Meyer (2009)
+  https://github.com/mirisuzanne/webfontspecimen
+• robertjwhitney/web-font-specimen - Sinatra app port (2010)
+  https://github.com/robertjwhitney/web-font-specimen
+• pixelninja/font_trial - Enhanced version with font uploading (2012)
+  https://github.com/pixelninja/font_trial
+
+MODERN ALTERNATIVES
+• mohamdio/Flont - Full-featured JavaScript font specimen library (2021)
+  https://github.com/mohamdio/Flont
+• source-foundry/pre-post - Flask + Jinja2 specimen sheets (2018)
+  https://github.com/source-foundry/pre-post
+
+============================================================================
+
 QUESTIONS & COMMUNITY:
 
 GETTING HELP
@@ -187,10 +225,15 @@ ADDITIONAL RESOURCES
 • Original Web Font Specimen site: http://webfontspecimen.com
 • Nice Web Type blog: http://nicewebtype.com  
 • CSS @font-face guide: http://nicewebtype.com/x/u
+• A List Apart article on web typography: http://alistapart.com/articles/real-web-type-in-real-web-context/
 • Creative Commons License: http://creativecommons.org/licenses/by/3.0/us/
 
 Thanks for checking out Web Font Specimen. I hope you enjoy it!
 
 Tim Brown
 Nice Web Type
-2010-2025
+2010
+
+---
+Enhanced documentation and GitHub preservation by Mark Opalski, 2025
+Repository: https://github.com/MarkOpalski/font-specimen

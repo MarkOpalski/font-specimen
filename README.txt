@@ -3,6 +3,8 @@ Version 2.0 + Google Fonts Integration
 Originally created 2010-04-06 by Tim Brown
 Enhanced 2025-11-04 by Mark Opalski
 
+🌐 LIVE DEMO: https://markopalski.github.io/font-specimen/
+
 ============================================================================
 
 ATTRIBUTION & ACKNOWLEDGMENTS

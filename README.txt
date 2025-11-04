@@ -1,42 +1,51 @@
-Web Font Specimen
-Version 2.0
-2010-04-06
-
-Created by Tim Brown
-http://webfontspecimen.com
-http://nicewebtype.com
+Enhanced Web Font Specimen
+Version 2.0 + Google Fonts Integration
+Originally created 2010-04-06 by Tim Brown
+Enhanced 2025-11-04 by Mark Opalski
 
 ============================================================================
 
 ATTRIBUTION & ACKNOWLEDGMENTS
 
-This repository preserves and enhances the original Web Font Specimen v2.0 
-created by Tim Brown from Nice Web Type. Tim Brown is Type Manager for 
-Typekit and a leading advocate for web typography who has contributed 
-immensely to the craft through tools, education, and community building.
+This repository preserves, enhances, and modernizes the original Web Font 
+Specimen v2.0 created by Tim Brown. Tim Brown is Head of Typography at Adobe 
+and a leading advocate for web typography who has contributed immensely to 
+the craft through tools, education, and community building.
 
-Original Web Font Specimen: http://webfontspecimen.com
-Tim Brown's Blog: http://nicewebtype.com
-Twitter: @nicewebtype
+ORIGINAL CREATOR
+• Tim Brown - Original Web Font Specimen v2.0 (2010)
+  Current: Head of Typography at Adobe
+  Website: https://tbrown.org
+  Mastodon: @timbrown@mastodon.social
+  LinkedIn: https://www.linkedin.com/in/tbrowntype/
+  
+ORIGINAL RESOURCES (Historical)
+• Original Web Font Specimen: http://webfontspecimen.com
+• Nice Web Type Blog: http://nicewebtype.com (historical)
 
-Special thanks to the community members who helped preserve this work:
-• Eric Meyer - Created Compass/Sass port (mirisuzanne/webfontspecimen, 2009)
-• Robert Whitney - Created Sinatra app port (robertjwhitney/web-font-specimen, 2010)
-• Various other developers who created adaptations and kept this tool accessible
+2025 ENHANCEMENTS BY
+• Mark Opalski - Google Fonts integration, WCAG compliance, modern UX
+  GitHub: https://github.com/MarkOpalski/font-specimen
+
+COMMUNITY CONTRIBUTIONS (Historical)
+• Eric Meyer - Compass/Sass port (mirisuzanne/webfontspecimen, 2009)
+• Robert Whitney - Sinatra app port (robertjwhitney/web-font-specimen, 2010)
+• Various developers who created adaptations keeping this tool accessible
 
 ============================================================================
 
 OVERVIEW
 
-Web Font Specimen is a comprehensive testing and showcase system for 
-evaluating web fonts using CSS @font-face. This tool provides designers 
-with a systematic way to test typefaces across different sizes, contexts, 
-and background conditions.
+Enhanced Web Font Specimen is a comprehensive testing and showcase system for 
+evaluating web fonts with both local @font-face files and dynamic Google Fonts 
+integration. This tool provides designers with a systematic way to test typefaces 
+across different sizes, contexts, and background conditions.
 
-Thanks for downloading Web Font Specimen! Enclosed you will find example 
-HTML, CSS, and image files, plus an empty folder in which to put your type.
+This enhanced version builds upon Tim Brown's original vision by adding modern 
+font loading capabilities and accessibility compliance tools while preserving 
+the elegant, systematic approach to font evaluation that made the original so valuable.
 
-FEATURES
+ORIGINAL FEATURES (Tim Brown's Web Font Specimen v2.0)
 
 • Text samples at various sizes (9px to 96px) with proper line-height (1.4em)
 • Character set display showing uppercase, lowercase, numbers, and symbols
@@ -46,118 +55,164 @@ FEATURES
 • Responsive grid layout using 960.gs framework
 • Clean, professional presentation suitable for client presentations
 
+NEW FEATURES (2025 Enhancements)
+
+• 🔍 Dynamic Google Fonts Search - Real-time search with autocomplete suggestions
+• ⚡ One-Click Font Loading - Quick access buttons for popular fonts
+• 🎨 Seamless Design Integration - Maintains original specimen aesthetics
+• ♿ WCAG AA Compliance Indicators - Visual contrast ratio compliance checking
+• 📱 Enhanced Mobile Support - Improved responsive design
+• 🏃 Instant Font Switching - No page reload required for font changes
+• 🎯 Simplified UX - Font name input instead of complex URL management
+
 TECHNICAL STRUCTURE
 
-• index.html - Main specimen display template with placeholder "Font name"
+CORE FILES (Original by Tim Brown)
+• index.html - Main specimen display with integrated Google Fonts loader
 • css/reset.css - Eric Meyer's CSS reset for consistent cross-browser rendering
-• css/960.css - Part of Nathan Smith's 960.gs grid system for layout
-• css/wfs.css - Custom styling for the font specimen layout and typography
-• css/type/ - Empty folder where you add your font files
+• css/960.css - Part of Nathan Smith's 960.gs grid system for layout  
+• css/wfs.css - Original font specimen layout and typography styling
+• css/type/ - Folder for local font files (still supported)
 • css/images/ - Background images and grid overlays for visual alignment
 
-One of the CSS files is Eric Meyer's reset.css; if you prefer a different 
-stylesheet for resetting default browser styling, swap it out. Another of 
-the CSS files is part of Nathan Smith's 960.gs, used for layout.
+NEW FILES (2025 Enhancements)
+• js/google-fonts-loader.js - Complete Google Fonts integration system
+• css/google-fonts-loader.css - Styling for search interface (matches specimen design)
+• demo.html - Usage examples and documentation
+• test.html - Server testing utility
 
-http://meyerweb.com/eric/tools/css/reset/
-http://960.gs/
+DEPENDENCIES & CREDITS
+• Eric Meyer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/
+• Nathan Smith's 960.gs Grid: http://960.gs/
+• Google Fonts API: https://fonts.google.com/
 
-Feel free to edit and re-release wfs.css and the markup that uses it. They 
-are licensed under a Creative Commons Attribution 3.0 License:
-http://creativecommons.org/licenses/by/3.0/us/
+LICENSING
+Original files (wfs.css, markup) by Tim Brown are licensed under Creative Commons 
+Attribution 3.0: http://creativecommons.org/licenses/by/3.0/us/
+
+2025 enhancements maintain the same Creative Commons Attribution 3.0 license to 
+honor Tim Brown's open approach and ensure continued accessibility.
 
 ============================================================================
 
 HOW TO USE:
 
-QUICK START GUIDE
+QUICK START GUIDE (New Enhanced Method)
+
+1) Start a local server (required for Google Fonts integration)
+
+   Navigate to the font-specimen directory in your terminal and run:
+   python3 -m http.server 8000
+   
+   Then open http://localhost:8000 in your browser.
+
+
+2) Use the Google Fonts loader interface
+
+   • Type font names in the search box (e.g., "Inter", "Roboto", "monospace")
+   • Select from real-time suggestions dropdown
+   • Click quick-access buttons for popular fonts
+   • Font loads instantly without page refresh
+
+
+3) Observe WCAG compliance indicators
+
+   In the grayscale section, look for visual indicators:
+   • ✅ Green checkmarks = WCAG AA compliant (good contrast)
+   • ❌ Red X marks = Non-compliant (poor contrast)
+   • Hover for exact contrast ratios
+
+
+ORIGINAL METHOD (Still Supported - Local Fonts)
 
 1) Add a typeface to the css/type/ folder
-
-   Make sure the typeface you want to try is licensed for use with the CSS 
-   @font-face property. (Not sure? Check the typeface's EULA.) The typefaces 
-   featured at http://webfontspecimen.com are okay to use.
-
    Supported formats: .otf, .ttf, .woff, .woff2, .eot
 
+2) Edit the embedded CSS in index.html
+   Update @font-face declaration and font-family in body selector
 
-2) Edit index.html
+3) Update the labels throughout the HTML
+   Replace "Font name" with your typeface name
 
-   In the HTML's embedded CSS (lines 12-15), update the @font-face property 
-   and font stack. The value "Font name" is arbitrary, but must be the same 
-   in both spots (@font-face declaration and body declaration).
+4) Preview in browser
+   The specimen displays your font across all test scenarios
 
-   Example:
-   @font-face {
-       font-family: "Helvetica Neue";
-       src: url(css/type/helvetica-neue.otf) format("opentype");
-   }
-   body { font-family: "Helvetica Neue", Georgia; }
+PROFESSIONAL USE CASES
 
-
-3) Label the HTML with your typeface's name
-
-   - Line 6, <title>Font name - Web Font Specimen</title>
-   - Line 31, <h1>Font name</h1>
-   - Line 67, <th>Font name</th>
-   
-
-4) Preview index.html in a browser!
-
-   The specimen will display your font across multiple test scenarios:
-   • Various font sizes with sample text
-   • Complete character set display
-   • Color contrast testing on light and dark backgrounds
-   • Side-by-side comparison with system fonts
+• Client presentations with instant font switching
+• Design team font evaluation sessions  
+• Typography accessibility compliance checking
+• Comparative font analysis and documentation
+• Style guide development and font selection
 
 
 ============================================================================
 
-BROWSER COMPATIBILITY & ADDITIONAL READING:
+BROWSER COMPATIBILITY & MODERN FEATURES:
 
 BROWSER SUPPORT
 
-Web Font Specimen is designed to be quick and easy. The tool works with 
-modern browsers that support CSS @font-face:
-• Chrome, Firefox, Safari (full support)
-• Internet Explorer 9+ (with proper font formats)
-• Edge (full support)
+Enhanced Web Font Specimen works with modern browsers:
+• Chrome, Firefox, Safari, Edge (full support including Google Fonts API)
+• Modern mobile browsers (iOS Safari, Chrome Mobile)
+• Requires JavaScript enabled for Google Fonts integration
+• Local font method works in all browsers supporting CSS @font-face
 
-For older Internet Explorer support, you may need additional font formats 
-(.eot) and browser-specific CSS. With a little extra effort and some advice 
-from the pros, we can improve browser compatibility.
+ACCESSIBILITY FEATURES
 
-"How to use CSS @font-face" walks you through the concepts:
-http://nicewebtype.com/x/u
+WCAG AA compliance checking includes:
+• Automated contrast ratio calculations
+• Visual indicators for text readability
+• Support for users evaluating accessible font choices
+• Clear pass/fail indicators based on 4.5:1 contrast requirements
 
-WHAT GETS TESTED
+WHAT GETS TESTED (Enhanced)
 
-The specimen evaluates fonts across key typographic scenarios:
+The specimen evaluates fonts across comprehensive scenarios:
 • Readability at small sizes (9-13px) for body text
 • Display impact at large sizes (24-96px) for headlines  
 • Character completeness and spacing
-• Contrast performance in various color combinations
-• Comparison against web-safe system fonts
+• Contrast performance with WCAG compliance indicators
+• Comparison against web-safe system fonts (Arial, Times, Georgia)
+• Real-world text samples and pangram testing
+• Cross-platform font rendering evaluation
+
+PERFORMANCE
+
+• Google Fonts load dynamically without page refresh
+• Fonts are cached by browser after first load
+• Search interface provides instant results
+• Minimal JavaScript footprint preserves original simplicity
 
 ============================================================================
 
-USING WITH TYPE DELIVERY SERVICES:
+ENHANCED FONT SERVICE INTEGRATION:
 
-INTEGRATION WITH FONT SERVICES
+GOOGLE FONTS (Now Built-In!)
 
-If you're using Web Font Specimen to try out typefaces from a type delivery 
-service like Typekit, Adobe Fonts, Google Fonts, or Kernest, you'll need to 
-remove the embedded CSS (the CSS in index.html) on lines 10-18 and add 
-whatever code your service requires.
+Google Fonts integration is now seamless with the enhanced interface:
+• No manual CSS editing required
+• Real-time search of Google Fonts database
+• One-click font loading and testing
+• Automatic URL generation and font application
+• Instant switching between different fonts
 
-Just be sure the type delivered by your service is being applied to 
-the "body" HTML element selector.
+ADVANCED: OTHER FONT SERVICES
 
-Example for Google Fonts:
-1. Remove lines 10-18 from index.html
-2. Add Google Fonts link in <head>: 
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-3. Update body CSS: body { font-family: "Open Sans", Georgia; }
+For services like Adobe Fonts, Typekit, or other providers:
+1. Use the "Advanced" section in the Google Fonts loader
+2. Paste the service's CSS URL directly
+3. Or edit index.html to remove embedded CSS (lines vary by version)
+4. Add the service's required code to the HTML <head>
+5. Ensure fonts apply to the "body" element selector
+
+CUSTOM FONTS & LOCAL FILES
+
+The original local font method remains fully supported:
+• Add font files to css/type/ directory
+• Update embedded CSS @font-face declarations
+• Perfect for proprietary or licensed fonts
+• No internet connection required
 
 
 ============================================================================
@@ -166,74 +221,118 @@ CUSTOMIZATION & ADVANCED USAGE:
 
 CUSTOMIZING THE SPECIMEN
 
-You can modify wfs.css to customize the specimen's appearance:
-• Change background colors and layout
-• Adjust font size ranges and sample text
-• Modify color contrast testing values
-• Add your own branding or client information
+You can modify files to customize appearance and functionality:
+• wfs.css - Original specimen styling and layout
+• google-fonts-loader.css - Search interface styling (matches specimen design)
+• google-fonts-loader.js - Search behavior and font database
+• index.html - Sample text and specimen sections
 
-SAMPLE TEXT OPTIONS
+SAMPLE TEXT & CONTENT
 
-The default specimen uses:
-• Philosophical text for readability testing at various sizes
+The specimen includes carefully chosen content:
+• Philosophical passages for readability testing at various sizes
 • "Pack my box with five dozen liquor jugs" pangram for character coverage
 • Complete character set display (A-Z, a-z, 0-9, symbols)
+• Real-world text scenarios for practical evaluation
 
-You can replace these with your own sample text relevant to your project.
+Customize sample text by editing index.html to match your project needs.
 
-PROFESSIONAL USE
+WCAG COMPLIANCE CUSTOMIZATION
 
-This tool is ideal for:
-• Client presentations and font recommendations
-• Internal design team font evaluations  
-• Comparative font analysis and selection
+The WCAG indicators can be customized in google-fonts-loader.js:
+• Modify contrast ratio thresholds (currently 4.5:1 for AA)
+• Add support for AAA compliance (7:1 ratio)
+• Customize visual indicators and tooltips
+• Extend to additional color combinations
+
+PROFESSIONAL APPLICATIONS
+
+Enhanced capabilities make this ideal for:
+• Client presentations with live font demonstrations
+• Accessibility-focused design reviews
 • Typography documentation and style guides
+• Design system font selection and validation
+• Educational workshops on web typography and accessibility
+• Comparative analysis of font performance across contexts
 
 ============================================================================
 
-RELATED PROJECTS & ADAPTATIONS:
+RELATED PROJECTS & COMMUNITY ECOSYSTEM:
 
-The Web Font Specimen has inspired numerous ports and adaptations over the years:
+Tim Brown's Web Font Specimen has inspired numerous adaptations over the years. 
+This enhanced version aims to modernize the original while preserving its 
+elegant approach to systematic font evaluation.
 
-FRAMEWORK INTEGRATIONS
+HISTORICAL ADAPTATIONS (Community Contributions)
 • mirisuzanne/webfontspecimen - Compass/Sass port by Eric Meyer (2009)
   https://github.com/mirisuzanne/webfontspecimen
-• robertjwhitney/web-font-specimen - Sinatra app port (2010)
+• robertjwhitney/web-font-specimen - Sinatra app port (2010)  
   https://github.com/robertjwhitney/web-font-specimen
 • pixelninja/font_trial - Enhanced version with font uploading (2012)
   https://github.com/pixelninja/font_trial
 
-MODERN ALTERNATIVES
-• mohamdio/Flont - Full-featured JavaScript font specimen library (2021)
+MODERN FONT EVALUATION TOOLS
+• mohamdio/Flont - JavaScript font specimen library (2021)
   https://github.com/mohamdio/Flont
 • source-foundry/pre-post - Flask + Jinja2 specimen sheets (2018)
   https://github.com/source-foundry/pre-post
 
+WHY THIS ENHANCED VERSION?
+
+While modern font platforms exist, they often prioritize marketing over 
+systematic evaluation. This enhanced Web Font Specimen maintains Tim Brown's 
+original vision of comprehensive, methodical font testing while adding:
+• Real-world workflow integration (Google Fonts)
+• Accessibility compliance checking (WCAG)  
+• Preserved elegant, professional presentation
+• Educational value for typography principles
+
 ============================================================================
 
-QUESTIONS & COMMUNITY:
+COMMUNITY & RESOURCES:
 
-GETTING HELP
+CONNECT WITH THE TYPOGRAPHY COMMUNITY
 
-Join Nice Web Type in the trenches. Let me know what you're working on via 
-@nicewebtype reply on Twitter. I'll add you to a growing list of folks who 
-are working for the betterment of typographic style and practice:
-http://twitter.com/nicewebtype/trenches
+Original Creator - Tim Brown:
+• Website: https://tbrown.org  
+• Mastodon: @timbrown@mastodon.social
+• LinkedIn: https://www.linkedin.com/in/tbrowntype/
+• Current Role: Head of Typography at Adobe
+• Typography Advisor GPT: https://chatgpt.com/g/g-6747971a14cc819180d3c13f107c317b-typography-advisor
 
-ADDITIONAL RESOURCES
+Enhanced Version - Mark Opalski:
+• Repository: https://github.com/MarkOpalski/font-specimen
+• Issues/Suggestions: https://github.com/MarkOpalski/font-specimen/issues
 
-• Original Web Font Specimen site: http://webfontspecimen.com
-• Nice Web Type blog: http://nicewebtype.com  
-• CSS @font-face guide: http://nicewebtype.com/x/u
-• A List Apart article on web typography: http://alistapart.com/articles/real-web-type-in-real-web-context/
-• Creative Commons License: http://creativecommons.org/licenses/by/3.0/us/
+TYPOGRAPHY RESOURCES & LEARNING
 
-Thanks for checking out Web Font Specimen. I hope you enjoy it!
+• Tim Brown's Typography Advisor (Custom ChatGPT): Expert typography guidance
+• Flexible Typesetting (Tim Brown): https://flexibletypesetting.com/
+• Practicing Typography Basics (Video Series): Educational content for all levels
+• Adobe Typography Team: Latest developments in digital typography
 
-Tim Brown
-Nice Web Type
-2010
+LICENSING & ATTRIBUTION
+
+This enhanced version maintains Tim Brown's original Creative Commons 
+Attribution 3.0 License, ensuring the tool remains open and accessible:
+http://creativecommons.org/licenses/by/3.0/us/
+
+When using or adapting this tool, please maintain attribution to:
+1. Tim Brown - Original Web Font Specimen creator (2010)  
+2. Mark Opalski - Google Fonts integration enhancements (2025)
+
+PRESERVING TYPOGRAPHIC CRAFT
+
+This project exemplifies how foundational design tools can be enhanced while 
+preserving their original elegance and educational value. Tim Brown's systematic 
+approach to font evaluation remains as relevant today as when he created it, 
+and these enhancements aim to make that systematic approach accessible to 
+modern workflows.
+
+Thanks for using Enhanced Web Font Specimen. We hope it serves your 
+typographic practice well!
 
 ---
-Enhanced documentation and GitHub preservation by Mark Opalski, 2025
-Repository: https://github.com/MarkOpalski/font-specimen
+Original Web Font Specimen v2.0 by Tim Brown, 2010
+Enhanced with Google Fonts integration by Mark Opalski, 2025
+GitHub Repository: https://github.com/MarkOpalski/font-specimen

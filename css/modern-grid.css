@@ -1,0 +1,121 @@
+/*
+  Modern CSS Grid System
+  Replaces 960.gs with modern CSS Grid while preserving Tim Brown's layout
+  Compatible with existing grid classes for seamless transition
+*/
+
+/* Modern Grid Container */
+.container_16 {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  gap: 20px; /* 10px margin left + 10px margin right = 20px gap */
+  box-sizing: border-box;
+}
+
+/* Grid Items - Modern CSS Grid approach */
+.grid_16 {
+  grid-column: span 16; /* Full width: 940px equivalent */
+}
+
+.grid_10 {
+  grid-column: span 10; /* 580px equivalent */
+}
+
+.grid_8 {
+  grid-column: span 8; /* 460px equivalent */
+}
+
+.grid_6 {
+  grid-column: span 6; /* 340px equivalent */
+}
+
+/* Additional grid sizes for completeness */
+.grid_1 {
+  grid-column: span 1;
+}
+.grid_2 {
+  grid-column: span 2;
+}
+.grid_3 {
+  grid-column: span 3;
+}
+.grid_4 {
+  grid-column: span 4;
+}
+.grid_5 {
+  grid-column: span 5;
+}
+.grid_7 {
+  grid-column: span 7;
+}
+.grid_9 {
+  grid-column: span 9;
+}
+.grid_11 {
+  grid-column: span 11;
+}
+.grid_12 {
+  grid-column: span 12;
+}
+.grid_13 {
+  grid-column: span 13;
+}
+.grid_14 {
+  grid-column: span 14;
+}
+.grid_15 {
+  grid-column: span 15;
+}
+
+/* Clear floats - no longer needed but keeping for compatibility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Legacy compatibility classes - maintained for existing HTML */
+.clearfix {
+  zoom: 1; /* IE6/7 legacy support maintained for compatibility */
+}
+
+/* Alpha/Omega positioning classes - maintained for compatibility */
+.alpha,
+.omega {
+  /* Legacy positioning classes - no longer needed with CSS Grid */
+  position: relative;
+}
+
+/* Responsive enhancement - maintain fixed layout on larger screens */
+@media screen and (min-width: 1020px) {
+  .container_16 {
+    width: 960px;
+    padding: 0;
+  }
+}
+
+/* Mobile responsive enhancement while preserving desktop experience */
+@media screen and (max-width: 959px) {
+  .container_16 {
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  /* Stack vertically on small screens while preserving typography specimen sizes */
+  .grid_6,
+  .grid_8,
+  .grid_10 {
+    grid-column: span 16;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_16 {
+    padding: 0 10px;
+    gap: 5px;
+  }
+}

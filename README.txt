@@ -1,5 +1,5 @@
 Enhanced Web Font Specimen
-Version 2.0 + Google Fonts Integration
+Version 2.1 - Google Fonts Integration & Modern CSS Grid
 Originally created 2010-04-06 by Tim Brown
 Enhanced 2025-11-04 by Mark Opalski
 
@@ -26,7 +26,7 @@ ORIGINAL RESOURCES (Historical)
 • Nice Web Type Blog: http://nicewebtype.com (historical)
 
 2025 ENHANCEMENTS BY
-• Mark Opalski - Google Fonts integration, WCAG compliance, modern UX
+• Mark Opalski - A Font Specimen as the UI, Google Fonts integration, WCAG compliance
   GitHub: https://github.com/MarkOpalski/font-specimen
 
 COMMUNITY CONTRIBUTIONS (Historical)
@@ -38,14 +38,16 @@ COMMUNITY CONTRIBUTIONS (Historical)
 
 OVERVIEW
 
-Enhanced Web Font Specimen is a comprehensive testing and showcase system for 
-evaluating web fonts with both local @font-face files and dynamic Google Fonts 
-integration. This tool provides designers with a systematic way to test typefaces 
-across different sizes, contexts, and background conditions.
+Enhanced Web Font Specimen is a systematic font evaluation tool designed for 
+typographic testing, not a web application. This comprehensive typography testing 
+system evaluates web fonts through methodical specimen display across multiple 
+contexts - sizes, character sets, contrast scenarios, and real-world text samples.
 
-This enhanced version builds upon Tim Brown's original vision by adding modern 
+Built for systematic font evaluation, this tool provides designers with Tim Brown's 
+proven methodology for thorough typeface analysis. The enhanced version adds modern 
 font loading capabilities and accessibility compliance tools while preserving 
-the elegant, systematic approach to font evaluation that made the original so valuable.
+the elegant, systematic approach to font evaluation that made the original invaluable 
+for professional typography work.
 
 ORIGINAL FEATURES (Tim Brown's Web Font Specimen v2.0)
 
@@ -72,10 +74,13 @@ TECHNICAL STRUCTURE
 CORE FILES (Original by Tim Brown)
 • index.html - Main specimen display with integrated Google Fonts loader
 • css/reset.css - Eric Meyer's CSS reset for consistent cross-browser rendering
-• css/960.css - Part of Nathan Smith's 960.gs grid system for layout  
 • css/wfs.css - Original font specimen layout and typography styling
 • css/type/ - Folder for local font files (still supported)
 • css/images/ - Background images and grid overlays for visual alignment
+
+MODERNIZED FILES (2025 Updates)
+• css/modern-grid.css - Modern CSS Grid system (replaces 960.gs legacy grid)
+• css/960.css - Legacy 960.gs grid (preserved but not linked)
 
 NEW FILES (2025 Enhancements)
 • js/google-fonts-loader.js - Complete Google Fonts integration system
@@ -85,8 +90,10 @@ NEW FILES (2025 Enhancements)
 
 DEPENDENCIES & CREDITS
 • Eric Meyer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/
-• Nathan Smith's 960.gs Grid: http://960.gs/
+• Modern CSS Grid: Replaces legacy 960.gs with native browser grid system
 • Google Fonts API: https://fonts.google.com/
+• Vite Build Tool: Modern development environment and build system
+• Nathan Smith's 960.gs Grid (legacy): http://960.gs/ - preserved for reference
 
 LICENSING
 Original files (wfs.css, markup) by Tim Brown are licensed under Creative Commons 
@@ -101,12 +108,20 @@ HOW TO USE:
 
 QUICK START GUIDE (New Enhanced Method)
 
-1) Start a local server (required for Google Fonts integration)
+1) Start a local server (required for Google Fonts integration due to CORS policies)
 
-   Navigate to the font-specimen directory in your terminal and run:
+   OPTION A - Python Server (Simple):
    python3 -m http.server 8000
+   # OR
+   npm run serve
    
-   Then open http://localhost:8000 in your browser.
+   OPTION B - Vite Development Server (Modern):
+   npm install
+   npm run dev        # Development server with hot reload
+   npm run build      # Production build
+   npm run preview    # Preview production build
+   
+   Then open the provided localhost URL in your browser.
 
 
 2) Use the Google Fonts loader interface
